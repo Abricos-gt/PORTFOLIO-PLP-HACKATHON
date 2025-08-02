@@ -1,8 +1,10 @@
-<<<<<<< HEAD
+*/ <<<<<<< HEAD
 /* Modern Theme */
 =======
  /* Modern Theme Variables */
->>>>>>> dc4b972b0e0b85a9f46b1f29a88b525bacb8bc22
+
+ >>>>>>> dc4b972b0e0b85a9f46b1f29a88b525bacb8bc22
+ */
 :root {
   --color-bg-gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   --color-text-primary: #f3f4f6;
