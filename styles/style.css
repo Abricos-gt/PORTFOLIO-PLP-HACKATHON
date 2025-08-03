@@ -1133,3 +1133,10 @@ button[type="submit"] {
   }
 
 }
+
+/* Break long words/links in contact info */
+.contact-info ul li,
+.contact-info ul li a {
+  word-break: break-all;    /* Break long words/links */
+  overflow-wrap: anywhere;  /* Allow breaking anywhere if needed */
+}
