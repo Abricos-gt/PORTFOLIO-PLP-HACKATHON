@@ -5,6 +5,12 @@ This project is a modern, responsive personal portfolio website built as part of
 
 ---
 
+## 🌐 Live Demo
+
+Check out the live site here: [https://abrha-web-showcase.netlify.app/](https://abrha-web-showcase.netlify.app/)
+
+---
+
 ## 🌟 Project Overview
 
 This portfolio website is designed to showcase the skills, background, and achievements of a developer. It includes:

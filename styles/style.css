@@ -1,4 +1,4 @@
-  /* ====== Theme Variables ====== */
+/* ====== Theme Variables ====== */
 :root {
   --color-bg-gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   --color-text-primary: #f3f4f6;
@@ -164,15 +164,25 @@ body {
 /* ====== Profile Section ====== */
 .profile-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;   /* Always column, not column-reverse */
   align-items: center;
-  min-height: 85vh; /* Increased from 70vh to push content down */
-  padding: 40px 20px; /* Increased top/bottom padding */
-  margin-top: 0; /* Reset any negative margin */
+  justify-content: flex-start;
+  min-height: 85vh;
+  padding: 40px 20px;
+  margin-top: 0;
+  gap: 2rem;
+}
+
+.profile-image-wrapper {
+  order: 0;
+  margin-bottom: 1.5rem;
 }
 
 .profile-text {
-  margin-top: 0; /* Reset if previously adjusted */
+  order: 1;
+  margin-top: 0;
+  text-align: center;
+  width: 100%;
 }
 
 .profile-text h2 {
@@ -285,7 +295,7 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   .profile-container {
-    flex-direction: column-reverse;
+    flex-direction: column; /* Make sure it's column, not column-reverse */
     align-items: center;
     text-align: center;
   }
