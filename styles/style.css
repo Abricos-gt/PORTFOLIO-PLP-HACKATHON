@@ -166,15 +166,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh; 
-  padding: 20px;
-  box-sizing: border-box;
+  min-height: 85vh; /* Increased from 70vh to push content down */
+  padding: 40px 20px; /* Increased top/bottom padding */
+  margin-top: 0; /* Reset any negative margin */
 }
 
 .profile-text {
-  text-align: center;
-  max-width: 800px;
-  width: 100%;
+  margin-top: 0; /* Reset if previously adjusted */
 }
 
 .profile-text h2 {
@@ -374,7 +372,6 @@ body {
   letter-spacing: 0.02em;
   border-bottom: 2px solid var(--color-accent);
   padding-bottom: 0.3rem;
-  text-align: center;
 }
 
  .about-text p {
@@ -423,7 +420,7 @@ body {
   cursor: default;
 }
 
-/* ✅ Responsive tweak (optional but recommended) */
+/* Responsive tweak (optional but recommended) */
 @media (max-width: 1024px) {
   .about-text,
   .about-edu {
@@ -694,6 +691,7 @@ body {
   }
 }
 
+
 /* ====== Projects Section ====== */
  .projects-grid {
   display: grid;
@@ -840,12 +838,8 @@ body {
 }
 
 
- /* ====== Contact Section ====== */
-
-
-
  /* === Contact Section Styling === */
- /* === Contact Section (Styled to Match Project Section) === */
+ 
 .contact-section {
   scroll-margin-top: 80px;
   padding: 6rem 1rem;
@@ -982,7 +976,6 @@ button[type="submit"] {
 
 
 /* ====== Footer ====== */
- /* Footer Base */
  .site-footer {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   padding: 3rem 1rem;
@@ -1083,21 +1076,44 @@ button[type="submit"] {
 }
 
 /* Responsive */
+
 @media (max-width: 768px) {
+  /* Fix center alignment */
   .footer-container {
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    gap: 2rem;
+    text-align: center !important; /* Force center all text */
+    margin: 0 auto;
+    gap: 1rem; /* Balanced spacing */
   }
 
   .footer-section {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
+  }
+
+  .footer-section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center list items */
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .footer-section ul li {
+    text-align: center !important; /* Force center */
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Fix email-motto spacing */
+  .footer-section:last-child {
+    margin-bottom: 0.8rem; /* Add space after contact section */
   }
 
   .footer-motto {
-    font-size: 1rem;
+    margin: 0.8rem auto !important; /* Consistent spacing */
     padding: 0 1rem;
+    line-height: 1.4;
   }
 }
