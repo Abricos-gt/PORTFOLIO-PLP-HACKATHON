@@ -78,7 +78,7 @@ PORTFOLIO-PLP-HACKATHON/
 ## 👥 Contributors
 
 - **Haile Znabu** ([GitHub](https://github.com/haileznabu)) — Deskie
-- **Abrha Gebrehiwet** — Deskie
+- **Abrha Gebrehiwet** ([GitHub](https://github.com/Abricos-gt)) — Deskie
 
 ---
 
