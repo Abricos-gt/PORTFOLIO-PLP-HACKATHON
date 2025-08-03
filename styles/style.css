@@ -553,6 +553,8 @@ body {
 
 }
 
+
+
 /* section title for all sections */
 .section-title {
   text-align: center;
@@ -690,6 +692,8 @@ body {
     font-size: 0.9rem;
   }
 }
+
+
 
 
 /* ====== Projects Section ====== */
@@ -836,6 +840,7 @@ body {
     justify-content: center;
   }
 }
+
 
 
  /* === Contact Section Styling === */
@@ -1077,7 +1082,7 @@ button[type="submit"] {
 
 /* Responsive */
 
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   /* Fix center alignment */
   .footer-container {
     flex-direction: column;
@@ -1115,5 +1120,10 @@ button[type="submit"] {
     margin: 0.8rem auto !important; /* Consistent spacing */
     padding: 0 1rem;
     line-height: 1.4;
+  }
+
+  /* Visual debug (remove after testing) */
+  * {
+    outline: 1px solid rgba(255,255,255,0.1);
   }
 }
