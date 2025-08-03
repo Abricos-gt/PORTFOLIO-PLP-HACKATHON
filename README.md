@@ -16,6 +16,7 @@ This portfolio website is designed to showcase the skills, background, and achie
 - **Projects:** Featured projects with images, descriptions, and GitHub links.
 - **Contact Form:** Easy way for collaborators or employers to reach out.
 
+
 ---
 
 ## 🛠️ Built With
