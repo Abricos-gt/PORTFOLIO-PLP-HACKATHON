@@ -1122,8 +1122,4 @@ button[type="submit"] {
     line-height: 1.4;
   }
 
-  /* Visual debug (remove after testing) */
-  * {
-    outline: 1px solid rgba(255,255,255,0.1);
-  }
 }
