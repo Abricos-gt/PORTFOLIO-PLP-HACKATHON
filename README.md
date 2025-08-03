@@ -7,7 +7,7 @@ This project is a modern, responsive personal portfolio website built as part of
 
 ## 🌐 Live Demo
 
-Check out the live site here: [https://abrha-web-showcase.netlify.app/](https://abrha-web-showcase.netlify.app/)
+Check out the live site here: [https://abrha-portfolio.netlify.app/](https://abrha-portfolio.netlify.app/)
 
 ---
 
