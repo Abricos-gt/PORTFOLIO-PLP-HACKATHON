@@ -987,6 +987,10 @@ button[type="submit"] {
   .contact-info ul {
     padding-left: 0.5rem;
   }
+
+  .contact-form h3 {
+    font-size: 1.4rem;
+  }
 }
 
 
