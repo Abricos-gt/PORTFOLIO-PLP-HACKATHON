@@ -51,13 +51,15 @@ body {
 }
  
 
-/* ====== Header ====== */
-/* === Base Header Styles === */
- header {
-  position: sticky;
+ 
+/* ====== Header/Navbar Styles ====== */
+header {
+  position: fixed;  
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
-  background: var(--color-bg-card); /* Ensure it's visible */
+  background: var(--color-bg-card);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,26 +68,26 @@ body {
   backdrop-filter: blur(10px);
   border-radius: 0 0 1rem 1rem;
   box-shadow: 0 5px 15px var(--color-shadow-dark);
+  height: var(--navbar-height); 
 }
-
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--color-accent);
-  z-index: 1001; /* Ensure it stays above other elements */
-  background-color: inherit; /* Avoid blending issues */
-  padding: 0.25rem 0; 
+  z-index: 1001;
+  background-color: inherit;
+  padding: 0.25rem 0;
   margin: 0;
 }
-
 
 /* === Navigation === */
 .nav-links {
   display: flex;
   gap: 2rem;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
 
 /* === Nav Link Styles === */
 .nav-links li a {
@@ -117,14 +119,29 @@ body {
   width: 100%;
 }
 
+/* ====== Profile Section Adjustments ====== */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 85vh;
+  padding: 2rem 20px;
+  margin-top: 2rem; /* Added margin to account for sticky header */
+  gap: 2rem;
+  /* Ensure content starts below navbar */
+  position: relative;
+  top: 0;
+}
+
 /* === Responsive Design === */
- /* === Responsive Design === */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
     padding: 1rem 1.5rem;
+    position: sticky; /* Maintain sticky on mobile */
   }
 
   .logo {
@@ -132,10 +149,9 @@ body {
     margin-bottom: 0.5rem;
   }
 
-  /* Change nav-links from column to row to make them horizontal */
   .nav-links {
-    flex-direction: row;    /* horizontal layout */
-    flex-wrap: wrap;       /* allow wrapping if needed */
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
     gap: 1rem;
@@ -145,8 +161,13 @@ body {
     font-size: 1rem;
     padding-left: 0;
   }
-}
 
+  /* Adjust profile container for mobile */
+  .profile-container {
+    padding-top: 3rem; /* More space on mobile */
+    margin-top: 1rem;
+  }
+}
 
 
 /* ====== Container Classes ====== */
@@ -169,13 +190,14 @@ body {
   justify-content: flex-start;
   min-height: 85vh;
   padding: 40px 20px;
-  margin-top: 0;
+  margin-top: 60px;
   gap: 2rem;
+  scroll-margin-top: 80px;
 }
 
 .profile-image-wrapper {
   order: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.05rem;
 }
 
 .profile-text {
@@ -298,12 +320,14 @@ body {
     flex-direction: column; /* Make sure it's column, not column-reverse */
     align-items: center;
     text-align: center;
+    margin-top: 20px;
   }
 
   .profile-image-wrapper {
     width: 180px;
     height: 180px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.05rem;
+     
   }
 
   .profile-text h2 {
@@ -910,6 +934,8 @@ body {
   margin-bottom: 1rem;
   font-weight: 600;
   font-size: 1rem;
+  word-break: break-word;   /* Forces breaks inside long words/URLs */
+  overflow-wrap: break-word;
 }
 
 .contact-info a {
