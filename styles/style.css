@@ -63,7 +63,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem 6rem;
+  padding: 1.25rem 2rem;
   flex-wrap: wrap;
   backdrop-filter: blur(10px);
   border-radius: 0 0 1rem 1rem;
